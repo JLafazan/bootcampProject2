@@ -6,6 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var fileUpload = require('express-fileupload');
 
 // Sets up the Express App
 // =============================================================
@@ -24,6 +25,10 @@ app.use(bodyParser.json());
 
 // Static directory
 app.use(express.static("public"));
+
+app.use(fileUpload({
+  limits: { fileSize: 50 * 1024 * 1024 },
+}));
 
 // Routes
 // =============================================================

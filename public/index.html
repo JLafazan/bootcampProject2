@@ -3,14 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Blog - Express</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryQuest</title>
   <!-- Latest compiled and minified CSS & JS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
   <link rel="stylesheet" href="css/headerFooter.css">
+  <link rel="stylesheet" href="css/signup.css">
 
-  <script src="https://code.jquery.com/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Arapey|Nanum+Myeongjo" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+
 </head>
 
 <body>
@@ -18,29 +29,34 @@
 
 <div class="subnav-hero-section">
         <h1 class="subnav-hero-headline">
-            <a href="./index.html">StoryQuest</a>
+            <a style="color:black" href="./index.html">Sacramento Event Quest</a>
         </h1>
         <ul class="subnav-hero-subnav">
+
+           <!--  <li>
+                <a href="./search.html">Search Images</a>
+            </li> -->
+
+            
+
             <li>
-                <a href="./search.html">Browse Recent Event Images</a>
+                <a style="color:black" href="./blog.html">Search Event Blog</a>
             </li>
             <li>
-                <a href="./blog.html">Search Event Blog</a>
-            </li>
-            <li>
-                <a href="./favorites.html">My Favorites</a>
-            </li>
-            <li>
-                <a href="./bizdirect.html">Business Directory</a>
+
+                <a style="color:black" href="./bizdirect.html">Blog Mall</a>
+
+                
+
             </li>
             <!-- <li>
                 <a href="./about.html">About</a>
             </li> -->
-            <li>
+            <!-- <li>
                 <a href="./contact.html">Contact</a>
-            </li>
+            </li> -->
         </ul>
-        <a href="./index.html" id="logout">Log Out</a>
+        <a href="./index.html" id="logout">Go Home</a>
     </div>
 
 
@@ -55,7 +71,7 @@
 
 
 
-<div id="sign-up-box">
+<!-- <div id="sign-up-box">
         <form class="callout text-center">
             <h2>Sign Up</h2>
             <div class="floated-label-wrapper">
@@ -71,53 +87,49 @@
                 <a class="here" id="signinhere">here.</a>
             </p>
         </form>
-    </div>
+     -->
+       
+    <!--  </div>
+    
+ -->
+
     <div id="sign-in-box" class="side-by-side">
-        <form class="callout text-center">
-            <h2>Sign In</h2>
-            <div class="floated-label-wrapper">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email input" placeholder="Email">
-            </div>
-            <div class="floated-label-wrapper">
-                <label for="pass">Password</label>
-                <input type="password" id="password-input" name="password input" placeholder="Password">
-            </div>
-            <input class="button expanded" type="submit" value="Sign in" id="sign-in-button">
-            <p>Not a member? Sign up
-                <a class="here" id="signuphere">here.</a>
-            </p>
-        </form>
+        <div style="width:500px; height:290px" class="callout text-center">
+            <h2>Events</h2>
+           <div id="events"></div>
+        </div>
     </div>
 
 
     <div id="video" class="side-by-side">
-        <iframe width="574" height="290" src="https://www.youtube.com/embed/FPrAJ7yqoiI" frameborder="0" allow="autoplay; encrypted-media"
+        <iframe width="574" height="290" src="https://www.youtube.com/embed/FsVkcy0bEbM" frameborder="0" allow="autoplay; encrypted-media"
             align="middle" allowfullscreen></iframe>
         
     </div>
 
 
 
+    <!-- https://www.youtube.com/watch?v=FsVkcy0bEbM -->
 
 
 
 
-
-        </div>
+      <!--   </div>
       </div>
-      <div class="col-md-2">
+      --> <!-- <div class="col-md-2">
         <a class="btn btn-light" href="/cms">New Story</a>
-      </div>
+      </div> -->
     </div>
-    <div class="row">
-      <div class="col-md-12 blog-container">
-      </div>
-    </div>
+    
   </div>
+  </div>
+<footer>
+    <div class="row NewStory" style="margin-top:20px;margin-left:320px">
+      <h2 class= "new">Post your Event {{ <a href='/cms'>Your Event</a> }} Post your Event</h2>
+</footer>
   <!-- Custom Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-  <script src="js/blog.js" type="text/javascript"></script>
+  <script src="js/index.js" type="text/javascript"></script>
 
 </body>
 

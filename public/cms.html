@@ -16,10 +16,10 @@
     <div class="row">
       <div class="row">
         <div class="col-sm-2 mt-4">
-          <a class="btn btn-light" href="/blog">Go to Blog</a>
+          <a class="btn btn-light" href="/blog">Go to Event Blog</a>
         </div>
       </div>
-      <div class="col-md-5 offset-md-3">
+      <div class="col-md-5 offset-md-2">
         <form id="cms">
           <div class="form-group">
             <label for="title">Title:</label>
@@ -31,10 +31,41 @@
               <label for="category">Select Category:</label>
               <select class="custom-select" id="category">
                 <option value="Personal">Personal</option>
-                <option value="Product Review">Product Review</option>
-                <option value="Political">Political</option>
+                <option value="Product Review">Event Review</option>
+                <option value="Political">Political Event</option>
+              <option value="Party">Party</option>
+                <option value="Dance">Dance</option>
+
+
               </select>
             </div>
+            
+            <label for="title">Photo:</label>
+            <!-- <input type="text" class="form-control" id="photo">
+ -->
+
+    <!-- <form 
+      ref='uploadForm' 
+      id='uploadForm' 
+      action='http://localhost:8080/cms' 
+      method='post' 
+      encType="multipart/form-data">
+        <input type="file" class="form-control" name="photo"> <input type="submit" value="Upload">
+    </form> 
+ -->
+
+    <form ref='uploadForm' 
+      id='uploadForm' 
+      action='http://localhost:8000/upload' 
+      method='post' 
+      encType="multipart/form-data">
+        <input type="file" class="form-control" id="photo" name="sampleFile" />
+        <!-- <input type="submit" class="form-control" value="Upload!" />
+    --> 
+  </form> 
+
+
+            <br />
             <br />
             <button type="submit" class="btn btn-success submit btn-lg">Submit</button>
           </div>
