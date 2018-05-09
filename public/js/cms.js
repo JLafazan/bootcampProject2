@@ -15,6 +15,7 @@ $(document).ready(function() {
   // Getting jQuery references to the post body, title, form, and category select
   var bodyInput = $("#body");
   var titleInput = $("#title");
+  var photoInput = $("#photo");
   var cmsForm = $("#cms");
   var postCategorySelect = $("#category");
   // Giving the postCategorySelect a default value
@@ -26,11 +27,15 @@ $(document).ready(function() {
     if (!titleInput.val().trim() || !bodyInput.val().trim()) {
       return;
     }
+
+
     // Constructing a newPost object to hand to the database
     var newPost = {
       title: titleInput.val().trim(),
       body: bodyInput.val().trim(),
-      category: postCategorySelect.val()
+      category: postCategorySelect.val(),
+      photo: photoInput.val()
+    
     };
 
     console.log(newPost);
@@ -61,6 +66,7 @@ $(document).ready(function() {
         titleInput.val(data.title);
         bodyInput.val(data.body);
         postCategorySelect.val(data.category);
+        photoInput.val(data.photo);
         // If we have a post with this id, set a flag for us to know to update the post
         // when we hit submit
         updating = true;

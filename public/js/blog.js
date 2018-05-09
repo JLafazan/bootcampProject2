@@ -8,8 +8,12 @@ $(document).ready(function() {
   postCategorySelect.on("change", handleCategoryChange);
   var posts;
 
+
+
+
   // This function grabs posts from the database and updates the view
   function getPosts(category) {
+    console.log('getPosts')
     var categoryString = category || "";
     if (categoryString) {
       categoryString = "/category/" + categoryString;
@@ -42,12 +46,15 @@ $(document).ready(function() {
   // InitializeRows handles appending all of our constructed post HTML inside
   // blogContainer
   function initializeRows() {
+    console.log('initializeRows')
     blogContainer.empty();
+    // eventsContainer.empty();
     var postsToAdd = [];
     for (var i = 0; i < posts.length; i++) {
       postsToAdd.push(createNewRow(posts[i]));
     }
     blogContainer.append(postsToAdd);
+    // eventsContainer.append(postsToAdd);
   }
 
   // This function constructs a post's HTML
@@ -62,7 +69,21 @@ $(document).ready(function() {
     var editBtn = $("<button>");
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-default");
-    var newPostTitle = $("<h2>");
+    var newPostPhoto = $('<img>');
+
+    // var buffer = post.photo.data
+
+    // console.log("Post Photo: "+ buffer.toString('utf8'));
+
+    // console.log(buffer.toString('utf8'));
+
+    // newPostPhoto.attr('src', buffer.toString('utf8'));
+
+    newPostPhoto.attr('src', 'http:/css/images/Sacramento_Riverfront.jpg');
+
+    console.log(newPostPhoto);
+
+    var newPostTitle = $("<h3>");
     var newPostDate = $("<small>");
     var newPostCategory = $("<h5>");
     newPostCategory.text(post.category);
@@ -70,22 +91,32 @@ $(document).ready(function() {
       float: "right",
       "font-weight": "700",
       "margin-top":
-      "-15px"
+      "0px"
     });
     var newPostCardBody = $("<div>");
     newPostCardBody.addClass("card-body");
     var newPostBody = $("<p>");
+
+    console.log(post.photo);
+    
     newPostTitle.text(post.title + " ");
     newPostBody.text(post.body);
     var formattedDate = new Date(post.createdAt);
     formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
     newPostDate.text(formattedDate);
+    
     newPostTitle.append(newPostDate);
     newPostCardHeading.append(deleteBtn);
     newPostCardHeading.append(editBtn);
     newPostCardHeading.append(newPostTitle);
+
     newPostCardHeading.append(newPostCategory);
+
+
     newPostCardBody.append(newPostBody);
+
+    newPostCard.append(newPostPhoto);
+
     newPostCard.append(newPostCardHeading);
     newPostCard.append(newPostCardBody);
     newPostCard.data("post", post);
@@ -114,8 +145,9 @@ $(document).ready(function() {
 
   // This function displays a message when there are no posts
   function displayEmpty() {
+    console.log('displayEmpty')
     blogContainer.empty();
-    var messageH2 = $("<h2>");
+    var messageH2 = $("<h3>");
     messageH2.css({ "text-align": "center", "margin-top": "50px" });
     messageH2.html("No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.");
     blogContainer.append(messageH2);
