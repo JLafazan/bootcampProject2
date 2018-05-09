@@ -72,5 +72,26 @@ Tuesday, March 8, 2018
 
 TO DO!!!
 
-1) Create three events 
+TO DO:
+
+Shaughn: databases: events_db, users_db, favorites_db
+
+sequelize the &5?! out of it!
+
+UNDER EVENTS DB:
+id, name, location, image, date, description
+
+USERS DB:
+id, name, password (blank for privacy)
+
+FAVORITES DB:
+id, event id, user id
+
+2) michelle: use handlebars to create the grid made to organize dummy organizations, make dummy pages for the 'about us' pages, work on handlebars for these pages
+
+3) someone: create ORM 
+_________
+
+EXTRA TASKS FOR ALL:
+1) new technology: web scraping - get the page's data and put it to the ORM
 
