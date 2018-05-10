@@ -2,8 +2,22 @@ $(document).ready(function() {
 
 // live search for abc order
 
-// live search for categories
+$('.biz-link').on('click', function(e) {
+	// stops page from refreshing
+	e.preventDefault();
+	// toggle class active
+	$(this).toggleClass('active');
+	// filter organizations by beginning letter
+});
 
+// live search for categories
+$('.cat-link').on('click', function(e) {
+	// stops page from refreshing
+	e.preventDefault();
+	// toggle class active
+	$(this).toggleClass('active');
+	// filter organizations by category
+});
 
 // on hover have info appear
 
