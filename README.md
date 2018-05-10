@@ -95,3 +95,9 @@ _________
 EXTRA TASKS FOR ALL:
 1) new technology: web scraping - get the page's data and put it to the ORM
 
+___
+
+MORE UPDATES 5/8/18
+1) Decided on one database with multiple tables
+2) Got web-scraping advice from Jordan and using Cheerio.js if Sac365 didn't have an API of its own
+3) 
