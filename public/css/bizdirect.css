@@ -1,0 +1,228 @@
+.subnav-hero-section {
+  text-align: center;
+  background-image: url(images/sacramento.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 300px;
+}
+
+#logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fefefe;
+  font-family: "nanum myeongjo", serif;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.subnav-hero-section .subnav-hero-headline a {
+  color: #fefefe;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subnav-hero-subnav {
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  font-family: "nanum myeongjo", serif;
+}
+
+.subnav-hero-subnav li {
+  float: none;
+  display: inline-block;
+}
+
+.subnav-hero-headline {
+  font-color: green;
+}
+
+.subnav-hero-subnav li a {
+  padding: 0.9rem 1rem;
+  font-size: 0.75rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.35s ease-in-out;
+}
+
+.subnav-hero-subnav li a.is-active {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+.subnav-hero-subnav li a:hover {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+footer {
+  /*background-image: url(images/sacramento.jpg);
+ */ 
+  background-color: #FAAF2A;
+  background-size: cover;
+  background-position: center bottom;
+  /*margin-top: -50px;*/
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  clear: both;
+}
+
+#rumi {
+  font-family: "Nanum Myeongjo", serif;
+  text-align: center;
+  padding: 35px;
+  font-size: 20px;
+  color: #fefefe;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.new {
+  margin-top: 20px;
+}
+
+.callout.text-center {
+  background-color: silver;
+}
+
+/* MICHELLE'S CSS */
+
+.active {
+  color: #fff;
+  background-color: #2C3E50;
+  border-radius: 0.25rem;
+}
+
+.bizdirect-body {
+	width: 80%;
+	margin: 20px auto 0 auto;
+}
+
+.bizdirect-nav {
+	margin-bottom: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 1 0 auto;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.biz-container {
+    position: relative;
+    width: 100%;
+}
+
+.org1, .org2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+}
+.biz-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.biz-container:hover .org1 {
+  opacity: 0.3;
+}
+
+.biz-container:hover .org2 {
+  opacity: 0.3;
+}
+
+.biz-container:hover .biz-middle {
+  opacity: 1;
+}
+
+.biz-text {
+  color: #000;
+  font-size: 16px;
+}
+
+.org-info {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.biz-photo {
+	margin: 0 auto;
+}
+
+.biz-cat-h4 {
+	display: inline;
+	margin: 0 20px;
+
+}
+
+.biz-categories {
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

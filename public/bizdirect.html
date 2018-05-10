@@ -7,78 +7,122 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-  <link rel="stylesheet" href="css/headerFooter.css">
 
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="css/headerFooter.css"> -->
+
+  <link rel="stylesheet" href="css/bizdirect.css">
+
+  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+  
+  <!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
 
+  <!-- HEADER -->
 
-<div class="subnav-hero-section">
-        <h1 class="subnav-hero-headline">
-            <a href="./index.html">Local Party Collective</a>
-        </h1>
-        <ul class="subnav-hero-subnav">
-            <li>
-                <a href="./search.html">Browse Recent Event Images</a>
-            </li>
-            <li>
-                <a href="./blog.html">Search Event Blog</a>
-            </li>
-            <li>
-                <a href="./favorites.html">My Favorites</a>
-            </li>
-            <li>
-                <a href="./bizdirect.html">Business Directory</a>
-            </li>
-            <!-- <li>
-                <a href="./about.html">About</a>
-            </li> -->
-            <li>
-                <a href="./contact.html">Contact</a>
-            </li>
-        </ul>
-        <a href="./index.html" id="logout">Log Out</a>
-    </div>
-
-
-
-  <div class="container">
-    <div class="row mt-4">
-      <div class="col-md-4">
-
-      <!-- HANDLEBARS/DATABASE WOULD BE HELPFUL FOR THIS TO PREVENT SUPER LONG HTML PAGE! -->
-        
-  <!-- mobile first -->
-
-  <!-- nav bar for A-E, F-J, K-O, P-T, U-Z -->
-
-  
-
-  <!-- nab bar for categories: animals, art/entertainment, food/drink, sports & rec, travel/exploring -->
-
-  <!-- title of business -->
-
-  <!-- friendly picture of business -->
-
-  <!-- categories -->
-
-  <!-- description of business -->
-
-  <!-- upcoming/recent events -->
-
-  <!-- learn more about them -->
-
-      </div>
-    </div>
+  <div class="subnav-hero-section">
+    <h1 class="subnav-hero-headline">
+        <a href="./index.html">All Local Organizations</a>
+    </h1>
+    <ul class="subnav-hero-subnav">
+        <li>
+            <a href="./search.html">Browse Recent Event Images</a>
+        </li>
+        <li>
+            <a href="./blog.html">Search Event Blog</a>
+        </li>
+        <li>
+            <a href="./favorites.html">My Favorites</a>
+        </li>
+        <li>
+            <a href="./bizdirect.html">Business Directory</a>
+        </li>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+    </ul>
+    <a href="./index.html" id="logout">Log Out</a>
   </div>
 
+  <div class="bizdirect-body">
+
+    <!-- ABC ORDER NAV BAR -->
+
+    <ul class="nav nav-pills nav-fill bizdirect-nav">
+      <li class="nav-item">
+        <a class="nav-link ae biz-link" href="#">A - E</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fj biz-link" href="#">F - J</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ko biz-link" href="#">K - O</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pt biz-link" href="#">P - T</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link uz biz-link" href="#">U - Z</a>
+      </li>
+  </ul>
+
+  <!-- CATEGORIES NAV BAR -->
+
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link cat-link" href="#">Animals</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link cat-link" href="#">Food & Drink</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link cat-link" href="#">Art & Entertainment</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link cat-link" href="#">Sports & Travel</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link cat-link" href="#">Social</a>
+    </li>
+  </ul>
+
+ <!-- GALLERY OF ORGS -->
+
+  <div class="gallery-row">
+    <div class="gallery-column">
+      <div class="biz-container">
+        <a href="org1.html"><img class="org1" src="css/images/comp.jpg"></a>
+      </div>
+      <div class="biz-container">
+        <img src="css/images/library.jpg">
+      </div>
+    </div>
+    <div class="gallery-column">
+      <div class="biz-container">
+        <img class="org2" src="css/images/music.jpg">
+      </div>
+      <div class="biz-container">
+        <img class="org2" src="css/images/comp.jpg">
+      </div>
+    </div> 
+  </div>
+
+  <!-- END GALLERY OF ORGS -->
+
+  </div>
+  </div>
+  </div>
+
+  <footer></footer>
 
   <!-- Custom Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-  <script src="js/blog.js" type="text/javascript"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- <script src="js/blog.js" type="text/javascript"></script> -->
 
   <script src="js/bizdirect.js" type="text/javascript"></script>
 

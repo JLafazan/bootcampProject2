@@ -95,3 +95,19 @@ _________
 EXTRA TASKS FOR ALL:
 1) new technology: web scraping - get the page's data and put it to the ORM
 
+___
+
+MORE UPDATES 5/8/18
+1) Decided on one database with multiple tables
+2) Got web-scraping advice from Jordan and using Cheerio.js if Sac365 didn't have an API of its own
+3) 
+
+Michelle's stuff on may 9, 2018 Wednesday
+
+1) collected placeholder images
+2) created 2 nav bars for abc and categories
+3) copied and pasted headerfooter stylesheet to make changes on own bizdirect.css stylesheets
+4) used tutorial to create photo grid
+5) attempted to add hover for text feature
+6) created page for one placeholder organization
+7) reviewed handlebars js for easy and convenient way to add database information into webpages
