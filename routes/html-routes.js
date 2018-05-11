@@ -26,4 +26,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/blog.html"));
   });
 
+app.get('/image.png', function (req,res){
+    res.sendFile(path.resolve('./uploads/image.png'));
+});
+
+
+
 };

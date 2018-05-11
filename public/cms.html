@@ -44,30 +44,28 @@
             <!-- <input type="text" class="form-control" id="photo">
  -->
 
-    <!-- <form 
-      ref='uploadForm' 
-      id='uploadForm' 
-      action='http://localhost:8080/cms' 
-      method='post' 
-      encType="multipart/form-data">
-        <input type="file" class="form-control" name="photo"> <input type="submit" value="Upload">
-    </form> 
- -->
-
+    <form  
+      method="post"
+      encType="multipart/form-data"
+      action="/upload">
+        <input type="file" class="form-control" name="file"><br>
+        
+<!-- 
     <form ref='uploadForm' 
       id='uploadForm' 
       action='http://localhost:8000/upload' 
       method='post' 
       encType="multipart/form-data">
         <input type="file" class="form-control" id="photo" name="sampleFile" />
+    -->     
         <!-- <input type="submit" class="form-control" value="Upload!" />
-    --> 
+    
   </form> 
-
+ -->
 
             <br />
             <br />
-            <button type="submit" class="btn btn-success submit btn-lg">Submit</button>
+            <button type="submit" value="Submit" class="btn btn-success submit btn-lg">Submit</button>
           </div>
         </form>
       </div>

@@ -49,13 +49,36 @@ $(document).ready(function() {
     else {
       submitPost(newPost);
     }
+
+    console.log('r8nnning ajax submit')
+
   });
 
   // Submits a new post and brings user to blog page upon completion
   function submitPost(Post) {
-    $.post("/api/posts/", Post, function() {
-      window.location.href = "/blog";
+    var file = $('input[type="file"]').prop('files')[0]
+    console.log("file:  ", file);
+    // console.log('Post: ', Post);
+
+    var formData;
+
+    formData = new FormData();
+    formData.append('file', file);
+
+    $.ajax({
+        url: '/upload',
+        data: formData,
+        processData: false,
+        type: 'POST',
+        success: function (data) {
+          $.post("/api/posts/", Post, function() {
+            // window.location.href = "/blog";
+          });
+      
+        }
     });
+ 
+
   }
 
   // Gets post data for a post if we're editing

@@ -56,8 +56,18 @@ $(document).ready(function() {
     blogContainer.append(postsToAdd);
     // eventsContainer.append(postsToAdd);
   }
+// function createServer(req,res) {
+//     if (req.url == '/photo') {
+//       var form = new formidable.IncomingForm();
+//       form.parse(req, function(err, fields, files){
+//       res.write('File Uploaded')
+//       res.end();  
+//       });
+//     }
+// }
+//   
 
-  // This function constructs a post's HTML
+// This function constructs a post's HTML
   function createNewRow(post) {
     var newPostCard = $("<div>");
     newPostCard.addClass("card");
@@ -71,15 +81,17 @@ $(document).ready(function() {
     editBtn.addClass("edit btn btn-default");
     var newPostPhoto = $('<img>');
 
+    // createServer();
+    
     // var buffer = post.photo.data
 
     // console.log("Post Photo: "+ buffer.toString('utf8'));
 
     // console.log(buffer.toString('utf8'));
 
-    // newPostPhoto.attr('src', buffer.toString('utf8'));
+    // newPostPhoto.attr('src', 'http:/photo');
 
-    newPostPhoto.attr('src', 'http:/css/images/Sacramento_Riverfront.jpg');
+    newPostPhoto.attr('src','/image.png');
 
     console.log(newPostPhoto);
 
